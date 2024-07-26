@@ -1,0 +1,16 @@
+.gallery {
+  background-image: linear-gradient(to top, white 59.7%, var(--bg-color-alt) 40.3%);
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    background-image: linear-gradient(to top, white 60.2%, var(--bg-color-alt) 39.8%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery {
+    background-image: linear-gradient(to top, white 60.2%, var(--bg-color-alt) 39.8%);
+  }
+}
+.gallery__picture {
+  margin: 0 auto;
+}

@@ -1,0 +1,33 @@
+.button {
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+}
+
+// Красная кнопка с белым текстом
+.btn--first {
+  color: var(--btn-color__alt);
+  background-color: var(--btn-color__base);
+  transition: background-color var(--transition-timing) var(--transition-function);
+  &:hover {
+    background: var(--btn-color__base-hover);
+  }
+  &:focus {
+    background: var(--btn-color__base-hover);
+    outline: none;
+  }
+}
+
+// Белая Кнопка с красным текстом
+.btn--second {
+  color: var(--btn-color__base);
+  background-color: var(--btn-color__alt);
+  transition: background-color var(--transition-timing) var(--transition-function);
+  &:hover {
+    background: var(--btn-color__alt-hover);
+  }
+  &:focus {
+    background: var(--btn-color__alt-hover);
+    outline: none;
+  }
+}

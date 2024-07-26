@@ -1,0 +1,57 @@
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+
+// Стили для файла с примером HTML-фрагмента
+
+// U T I L S
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/variables';
+@import './utils/visually-hidden';
+// B A S E
+@import './base/common';
+@import './base/container';
+@import './base/section';
+// C O M P O N E N T S
+@import './components/logo';
+@import './components/button';
+@import './components/title';
+@import './components/mobile-menu';
+@import './components/backdrop';
+@import './components/backdrop-buy-now';
+@import './components/modal-buy-now';
+@import './components/modal-form-buy-now';
+@import './components/scroll-up';
+// L A Y O U T
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/gallery';
+@import './layout/header';
+@import './layout/products';
+@import './layout/reviews';
+
+// 7 каталогов и один файл main.scss на выходе:
+// base/ — включает глобальные стили, такие как сброс стилей, типография, цвета и т.д.
+// components/ — содержит отдельные компоненты с отдельным файлом .scss для каждого из них.
+// layout/ — содержит стили для основных компонентов макета, таких как хедер, футер, навигация и т.д.
+// pages/ — содержит стили, специфичные для отдельных страниц, если это необходимо.
+// themes/ — стили для разных тем.
+// utils/ — глобальные миксины, функции, вспомогательные селекторы и т.д.
+// vendors/ — стили, миксины и прочее от третьих сторон
+// main.scss — выходной файл, в котором объединяются все стили.
+//
+// В каждом каталоге должен быть файл .scss, объединяющий все остальные файлы из этого каталога -
+// он может называться _module.scss или _glob.scss, например.
+// И на каждый из этих файлов должна быть ссылка в основном файле main.scss:
+// main.scss
+// @import 'base/module';
+// @import 'components/module';
+// @import 'layout/module';
+// @import 'pages/module';
+// @import 'themes/module';
+// @import 'utils/module';
+// @import 'vendors/module';

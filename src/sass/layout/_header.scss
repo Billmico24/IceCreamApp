@@ -1,0 +1,714 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.header__item-list-nav-link {
+  font-weight: bold;
+  color: var(--bg-color-base);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__item-list-nav-link:focus,
+.header__item-list-nav-link:hover {
+  color: var(--accent-color);
+}
+
+.header__item-list-nav-link--color-pink {
+  color: var(--btn-color__base);
+}
+
+.text-btn-white-header {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.hero {
+  background: #ffb8ca;
+  padding-bottom: 45px;
+  padding-top: 37px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 14.5px;
+  padding-right: 14.5px;
+}
+
+.right-btn-icon-short {
+  width: 10px;
+  height: 9px;
+  margin-left: 12px;
+  fill: var(--accent-color);
+}
+
+.hero__secondary-title {
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 44px;
+
+  font-size: 26px;
+  line-height: 1.15;
+
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--bg-color-base);
+  font-weight: normal;
+  font-family: Titan One;
+}
+
+.hero__list-btn {
+  display: flex;
+  flex-direction: row;
+}
+
+// .title {
+//   color: var(--btn-color__base);
+// }
+
+.hero__lorem-text {
+  color: var(--bg-color-base);
+  font-weight: normal;
+}
+
+.arrow-button {
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  background-color: var(--bg-color-base);
+  transition: background-color var(--transition-timing) var(--transition-function);
+}
+
+.arrow-button:hover,
+.arrow-button:focus {
+  background-color: var(--btn-color__alt-hover);
+}
+
+.hero__some-cont-lorem {
+  align-items: flex-end;
+}
+
+.hero__cont-flex-title-sale {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__item-numbers {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--btn-color__base);
+  z-index: 1;
+  position: relative;
+}
+
+.hero__item {
+  text-align: right;
+  color: var(--bg-color-base);
+}
+
+.hero__items-cafes-food-trucks {
+  position: relative;
+}
+
+.hero__items-cafes-food-trucks::after {
+  content: '';
+  background-color: var(--bg-color-base);
+  position: absolute;
+}
+
+.logo {
+  display: block;
+  align-self: center;
+}
+
+.header__cont {
+  display: flex;
+  align-items: baseline;
+}
+
+.button-color-white-header {
+  color: var(--btn-color__base);
+  font-size: 16px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left: 37px;
+  padding-right: 37px;
+  border-radius: 100px;
+  font-weight: bold;
+  background-color: var(--bg-color-base);
+  display: flex;
+  align-items: center;
+  transition: background-color var(--transition-timing) var(--transition-function);
+}
+
+.button-color-white-header:hover,
+.button-color-white-header:focus {
+  background-color: var(--btn-color__alt-hover);
+}
+
+.btn--second-hero {
+    text-decoration: none;
+}
+
+.btn--first-hero{
+    text-decoration: none;
+}
+
+// MOBILE
+@media screen and (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+
+  .button-color-white-header {
+    display: none;
+  }
+
+  .hero__secondary-title {
+    max-width: 218px;
+    margin-bottom: 19px;
+  }
+
+  .title-header {
+    font-size: 48px;
+  }
+
+  .hero__lorem-text {
+    display: none;
+  }
+
+  .arrow-button {
+    display: none;
+  }
+
+  .hero__list-points-sale {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 6px;
+    padding-left: 20px;
+    padding-bottom: 160px;
+  }
+
+  .header__cont {
+    margin-bottom: 137px;
+  }
+
+  .btn--first-hero {
+    font-size: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+  }
+
+  .btn--second-hero {
+    font-size: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+  }
+
+  .btn--first--mr {
+    margin-right: 8px;
+  }
+
+  // img
+
+  // ice
+  .hero__cont-flex {
+    position: relative;
+  }
+
+  .hero__cont-flex::before {
+    @media screen and (max-width: 402px) {
+      display: none;
+    }
+    content: '';
+    width: 346px;
+    height: 419px;
+    background-image: url(../images/mobile/hero-ice-cream-mobile.png);
+    background-image: url(../images/mobile/hero-ice-cream-mobile-2x.png);
+    background-image: url(../images/mobile/webp/hero-ice-cream-mobile.webp);
+    background-image: url(../images/mobile/webp-2x/hero-ice-cream-mobile-2x.webp);
+    background-size: cover;
+    position: absolute;
+    left: 36px;
+    bottom: -160px;
+
+    animation-name: opacity;
+    animation-duration: 2000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: backwards;
+  }
+
+  .hero__title-and-btn {
+    z-index: 1;
+  }
+
+  // img end
+
+  // modal
+
+  .hero {
+    position: relative;
+  }
+
+  // modal end
+}
+
+@media screen and (max-width: 402px) {
+  // img
+
+  // ice
+  .hero {
+    position: relative;
+  }
+
+  .hero::before {
+    content: '';
+    width: 284px;
+    height: 419px;
+    background-image: url(../images/mobile/hero-ice-cream-mobile-320.png);
+    background-image: url(../images/mobile/hero-ice-cream-mobile-320-2x.png);
+    background-image: url(../images/mobile/webp/hero-ice-cream-mobile-320.webp);
+    background-image: url(../images/mobile/webp-2x/hero-ice-cream-mobile-320-2x.webp);
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 64px;
+
+    animation-name: opacity;
+    animation-duration: 2000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: backwards;
+  }
+
+  .hero__title-and-btn {
+    z-index: 1;
+  }
+  // img end
+}
+
+// TABLET
+@media screen and (min-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .hero__secondary-title {
+    font-size: 22px;
+    line-height: 1.13;
+    max-width: 162px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  // .title {
+  //   font-size: 34px;
+  // }
+
+  .hero__lorem-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 150%;
+    margin-bottom: 7px;
+    width: 130px;
+  }
+
+  .hero__title-and-btn {
+    margin-bottom: 66px;
+  }
+
+  .arrow-button {
+    width: 18px;
+    height: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .arrow-button-icon {
+    width: 6px;
+    height: 6px;
+    fill: var(--accent-color);
+  }
+
+  .hero__item-numbers {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  .hero__item {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  .hero__items-cafes-food-trucks {
+    margin-bottom: 13px;
+  }
+
+  .hero__items-cafes-food-trucks::after {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    top: -4px;
+    right: -8px;
+  }
+
+  .hero__list-points-sale {
+    margin-top: 12px;
+  }
+
+  .logo {
+    display: block;
+    align-self: center;
+  }
+
+  .header__cont {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .hero {
+    padding-bottom: 34px;
+    padding-top: 37px;
+    padding-left: 34px;
+  }
+
+  .hero__some-cont-lorem {
+    margin-left: 120px;
+  }
+
+  .btn--first-hero {
+    font-size: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 14.5px;
+    padding-right: 14.5px;
+  }
+
+  .btn--second-hero {
+    font-size: 8px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    padding-left: 13.5px;
+    padding-right: 13.5px;
+  }
+
+  .btn--first--mr {
+    margin-right: 8px;
+  }
+
+  // img
+
+  // ics
+  .hero__cont-flex {
+    position: relative;
+  }
+
+  .hero__cont-flex::before {
+    content: '';
+    width: 324px;
+    height: 368px;
+    background-image: url(../images/tablet/hero-ice-cream-tablet.png);
+    background-image: url(../images/tablet/hero-ice-cream-tablet-2x.png);
+    background-image: url(../images/tablet/webp/hero-ice-cream-tablet.webp);
+    background-image: url(../images/tablet/webp-2x/hero-ice-cream-tablet-2x.webp);
+    background-size: cover;
+    position: absolute;
+    right: 127px;
+    bottom: -34px;
+
+    animation-name: opacity;
+    animation-duration: 3000ms;
+    animation-delay: 1500ms;
+    animation-fill-mode: backwards;
+  }
+
+  // girl
+  .hero__cont-flex-title-sale {
+    position: relative;
+  }
+
+  .hero__cont-flex-title-sale::before {
+    content: '';
+    width: 168px;
+    height: 133px;
+    background-image: url(../images/tablet/girl-taste-tablet.png);
+    background-image: url(../images/tablet/girl-taste-tablet-2x.png);
+    background-image: url(../images/tablet/webp/girl-taste-tablet.webp);
+    background-image: url(../images/tablet/webp-2x/girl-taste-tablet-2x.webp);
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    bottom: -107px;
+
+    animation-name: opacity;
+    animation-duration: 2000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: backwards;
+  }
+
+  // milk
+  .hero__some-cont-lorem {
+    position: relative;
+  }
+
+  .hero__some-cont-lorem::before {
+    content: '';
+    width: 124px;
+    height: 126px;
+    background-image: url(../images/tablet/milk-bottle-tablet.png);
+    background-image: url(../images/tablet/milk-bottle-tablet-2x.png);
+    background-image: url(../images/tablet/webp/milk-bottle-tablet.webp);
+    background-image: url(../images/tablet/webp-2x/milk-bottle-tablet-2x.webp);
+    background-size: cover;
+    position: absolute;
+    left: -120px;
+    bottom: -6px;
+
+    animation-name: opacity;
+    animation-duration: 1500ms;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+  }
+
+  // img end
+
+  .burger-btn {
+    position: absolute;
+    top: 14px;
+    right: 203px;
+    z-index: 1;
+  }
+
+  .header__cont {
+    position: relative;
+  }
+}
+
+// DESKTOP
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-bottom: 74px;
+  }
+
+  .header__item-list-nav-link {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .header__list-nav-link--mr:not(:last-child) {
+    margin-right: 35px;
+  }
+
+  .header__cont {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .header__nav {
+    display: block;
+  }
+
+  .header__list-nav-link {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .hero {
+    padding-bottom: 45px;
+    padding-top: 37px;
+  }
+
+  .hero__secondary-title {
+    font-size: 38px;
+    line-height: 44px;
+    max-width: 277px;
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+
+  //   .title {
+  //     font-size: 58px;
+  //   }
+
+  .hero__lorem-text {
+    font-size: 14px;
+    line-height: 140%;
+    width: 200px;
+    margin-bottom: 20px;
+  }
+
+  .hero__title-and-btn {
+    margin-bottom: 112px;
+  }
+
+  .arrow-button {
+    width: 26px;
+    height: 26px;
+    padding-top: 9px;
+    padding-left: 9px;
+  }
+
+  .arrow-button-icon {
+    width: 8px;
+    height: 8px;
+    fill: var(--accent-color);
+  }
+
+  .hero__item-numbers {
+    font-size: 46px;
+    line-height: 1.15;
+    margin-bottom: 2px;
+  }
+
+  .hero__item {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+
+  .hero__items-cafes-food-trucks {
+    margin-bottom: 15px;
+  }
+
+  .hero__items-cafes-food-trucks::after {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    top: -6px;
+    right: -14px;
+  }
+
+  .logo {
+    display: block;
+    align-self: center;
+  }
+
+  .header__cont {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .hero__some-cont-lorem {
+    margin-left: 180px;
+  }
+
+  .btn--first-hero {
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+
+  .btn--second-hero {
+    font-size: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20.5px;
+    padding-right: 20.5px;
+  }
+
+  .btn--first--mr {
+    margin-right: 15px;
+  }
+
+  // img
+
+  // ice
+  .hero__cont-flex {
+    position: relative;
+  }
+
+  .hero__cont-flex::before {
+    content: '';
+    width: 538px;
+    height: 613px;
+    background-image: url(../images/desktop/hero-ice-cream-desktop.png);
+    background-image: url(../images/desktop/hero-ice-cream-desktop-2x.png);
+    background-image: url(../images/desktop/webp/hero-ice-cream-desktop.webp);
+    background-image: url(../images/desktop/webp-2x/hero-ice-cream-desktop-2x.webp);
+    background-size: cover;
+    position: absolute;
+    right: 170px;
+    bottom: -45px;
+
+    animation-name: opacity;
+    animation-duration: 3000ms;
+    animation-delay: 1500ms;
+    animation-fill-mode: backwards;
+  }
+
+  // girl
+  .hero__cont-flex-title-sale {
+    position: relative;
+  }
+
+  .hero__cont-flex-title-sale::before {
+    content: '';
+    width: 293px;
+    height: 232px;
+    background-image: url(../images/desktop/girl-taste-desktop.png);
+    background-image: url(../images/desktop/girl-taste-desktop-2x.png);
+    background-image: url(../images/desktop/webp/girl-taste-desktop.webp);
+    background-image: url(../images/desktop/webp-2x/girl-taste-desktop-2x.webp);
+    background-size: cover;
+    position: absolute;
+    right: 0px;
+    bottom: -167px;
+
+    animation-name: opacity;
+    animation-duration: 2000ms;
+    animation-delay: 1000ms;
+    animation-fill-mode: backwards;
+  }
+
+  // milk
+  .hero__some-cont-lorem {
+    position: relative;
+  }
+
+  .hero__some-cont-lorem::before {
+    content: '';
+    width: 188px;
+    height: 191px;
+    background-image: url(../images/desktop/milk-bottle-desktop.png);
+    background-image: url(../images/desktop/milk-bottle-desktop-2x.png);
+    background-image: url(../images/desktop/webp/milk-bottle-desktop.webp);
+    background-image: url(../images/desktop/webp-2x/milk-bottle-desktop-2x.webp);
+    background-size: cover;
+    position: absolute;
+    left: -180px;
+    bottom: -12px;
+
+    animation-name: opacity;
+    animation-duration: 1500ms;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
+  }
+
+  .header {
+    position: relative;
+    z-index: 1;
+  }
+
+  // img end
+}

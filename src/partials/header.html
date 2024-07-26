@@ -1,0 +1,174 @@
+<section class="hero" id="hero">
+    <header class="header">
+        <div class="container header__cont">
+            <!-- Кнопка вызова Мобильное меню -->
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-icon">
+                    <use href="./images/sprite.svg#burger"></use>
+                </svg>
+            </button>
+            <a href="/" class="logo">
+                <picture>
+                    <source srcset="../src/images/logo.png 1x, ../src/images/logo-2x.png 2x" type="image/png">
+                    <img src="#" alt="logo">
+                </picture>
+            </a>
+            <nav  class="header__nav">
+                <ul class="list header__list-nav-link">
+                    <li class="header__list-nav-link--mr"><a href="#hero" class="link header__item-list-nav-link header__item-list-nav-link--color-pink" href="">Home</a></li>
+                    <li class="header__list-nav-link--mr"><a href="#advantages" class="link header__item-list-nav-link" href="">About us</a></li>
+                    <li class="header__list-nav-link--mr"><a href="#about" class="link header__item-list-nav-link" href="">How it’s made?</a></li>
+                    <li class="header__list-nav-link--mr"><a href="#products" class="link header__item-list-nav-link" href="">Our products</a></li>
+                    <li class="header__list-nav-link--mr"><a href="#contacts" class="link header__item-list-nav-link" href="">Contact</a></li>
+                </ul>
+            </nav>
+            <!-- <button type="button" class="button btn--second button-color-white-header"><span class="text-btn-white-header">Buy now</span></button> -->
+            <button class="button-color-white-header button" modal-open-buy-now>Buy now
+                <svg class="right-btn-icon-short">
+                    <use href="./images/sprite.svg#right"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="container hero__cont-flex">
+        <div class="hero__cont-flex-title-sale">
+            
+            <div class="hero__title-and-btn">
+                <h1 class="hero__secondary-title">ice cream made with <span class="title">passion</span></h1>
+                <ul class="hero__list-btn list">
+                    <li><a href="#products" type="button" class="button btn--first btn--first-hero btn--first--mr">Products</a></li>
+                    <li><a href="#about" type="button" class="button btn--second btn--second-hero">How it’s made?</a></li>
+                </ul>
+            </div>
+
+            <ul class="list hero__list-points-sale">
+                <li class="hero__items-cafes-food-trucks">
+                    <p class="hero__item-numbers">16</p>
+                    <p class="hero__item">cafes</p>
+                </li>
+                <li class="hero__items-cafes-food-trucks">
+                    <p class="hero__item-numbers">23</p>
+                    <p class="hero__item">food trucks</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hero__some-cont-lorem">
+            <p class="hero__lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button type="button" class="arrow-button">
+                <svg class="arrow-button-icon">
+                    <use href="../src/images/sprite.svg#right-arrow"></use>
+                </svg>
+            </button>
+        </div>
+
+            <!-- Мобильное меню -->
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu__container">
+
+                <!-- Кнопка Закрытие мобильное меню -->
+                <button class="mobile-menu-close-btn" data-menu-close>
+                    <svg class="close-btn-icon">
+                        <use href="./images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+
+                <!-- Кнопка Buy now -->
+                <button class="buy-now-btn btn--second button" modal-open-buy-now-mobile-menu>
+                    Buy now
+                    <svg class="right-btn-icon">
+                        <use href="./images/sprite.svg#right"></use>
+                    </svg>
+                </button>
+
+                <!-- Навигация моб.меню -->
+                <div class="mobile-nav">
+                    <ul class="mobile-menu__nav list">
+                        <li class="mobile-menu__item">
+                            <a href="#hero" class="mobile-menu__link link">Home</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#advantages" class="mobile-menu__link link">About us</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#about" class="mobile-menu__link link">How it’s made?</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#products" class="mobile-menu__link link">Our products</a>
+                        </li>
+                        <li class="mobile-menu__item">
+                            <a href="#contacts" class="mobile-menu__link link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- =============== Модальное окно ============== -->
+        <div class="backdrop-buy-now is-hidden-buy-now" modal-buy-now>
+            <div class="modal-buy-now">
+
+                <!-- === Кнопка закрытия === -->
+                <button class="close-btn-buy-now" type="button" modal-close-buy-now>
+                    <svg class="close-btn-buy-now-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <!-- === Конец Кнопка закрытия === -->
+
+                <!-- === Кнопка закрытия Моб.версия=== -->
+                <button class="close-btn-buy-now" type="button" modal-close-buy-now-mobile-menu>
+                    <svg class="close-btn-buy-now-icon" width="18" height="18">
+                        <use href="./images/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <!-- === Конец Кнопка закрытия Моб.версия === -->
+        
+                <!-- === Форма === -->
+                <form class="modal-form-buy-now">
+                    <p class="modal-form-buy-now-head">
+                        Leave your details, we will call you back
+                    </p>
+                    <label class="modal-form-buy-now-field">
+                        Name
+                        <span class="modal-form-buy-now-input-wrapper">
+                            <input type="text" name="user-name" class="modal-form-buy-now-input" minlength="2" title="Sam" required />
+                            <svg class="modal-form-buy-now-icon">
+                                <use href="./images/sprite.svg#person"></use>
+                            </svg>
+                        </span>
+                    </label>
+        
+                    <label class="modal-form-buy-now-field">
+                        Phone
+                        <span class="modal-form-buy-now-input-wrapper">
+                            <input type="tel" name="user-phone" class="modal-form-buy-now-input" title="096-111-11-11" required />
+                            <svg class="modal-form-buy-now-icon">
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>
+                        </span>
+                    </label>
+        
+                    <label class="modal-form-buy-now-field">
+                        Email
+                        <span class="modal-form-buy-now-input-wrapper">
+                            <input type="tel" name="user-email" class="modal-form-buy-now-input" title="email@example.com" required />
+                            <svg class="modal-form-buy-now-icon">
+                                <use href="./images/sprite.svg#email"></use>
+                            </svg>
+                        </span>
+                    </label>
+                
+                    <button type="submit" class="modal-form-buy-now-button btn--first button">
+                        Send
+                    </button>
+                </form>
+                <!-- === Конец Форма === -->
+            </div>
+        </div>
+        <!-- ============ Конец Модальное окно ============-->
+        
+    </div>
+</section>
+

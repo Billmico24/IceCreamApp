@@ -1,0 +1,25 @@
+/* Backdrop - задний фон для Модального окна*/
+.backdrop-buy-now {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 103;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  visibility: visible;
+
+  pointer-events: auto;
+
+  transition: opacity var(--transition-timing) var(--transition-function),
+    visibility var(--transition-timing) var(--transition-function);
+}
+.backdrop-buy-now.is-hidden-buy-now {
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+}

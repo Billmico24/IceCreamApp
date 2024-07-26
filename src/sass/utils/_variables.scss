@@ -1,0 +1,21 @@
+:root {
+  /* цвет фон */
+  --bg-color-base: #ffffff;
+  --bg-color-alt: #fff5f6;
+
+  /* цвет кнопка */
+  --btn-color__base: #d41443;
+  --btn-color__alt: #ffffff;
+  --btn-color__base-hover: #c7133e;
+  --btn-color__alt-hover: #ecebeb;
+
+  /* цвет текста */
+  --txt-color-base: #907e82;
+
+  /* цвет акцента */
+  --accent-color: #d41443;
+
+  /* параметры transition для hover */
+  --transition-timing: 250ms;
+  --transition-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
