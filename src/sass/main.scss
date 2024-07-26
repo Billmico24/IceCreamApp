@@ -1,19 +1,21 @@
 /*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
+ * Main stylesheet file.
+ * All partials are imported here.
  */
 
-// Стили для файла с примером HTML-фрагмента
+// Styles for the HTML fragment example file
 
 // U T I L S
 @import './utils/mixins';
 @import './utils/placeholders';
 @import './utils/variables';
 @import './utils/visually-hidden';
+
 // B A S E
 @import './base/common';
 @import './base/container';
 @import './base/section';
+
 // C O M P O N E N T S
 @import './components/logo';
 @import './components/button';
@@ -24,6 +26,7 @@
 @import './components/modal-buy-now';
 @import './components/modal-form-buy-now';
 @import './components/scroll-up';
+
 // L A Y O U T
 @import './layout/about';
 @import './layout/advantages';
@@ -34,19 +37,19 @@
 @import './layout/products';
 @import './layout/reviews';
 
-// 7 каталогов и один файл main.scss на выходе:
-// base/ — включает глобальные стили, такие как сброс стилей, типография, цвета и т.д.
-// components/ — содержит отдельные компоненты с отдельным файлом .scss для каждого из них.
-// layout/ — содержит стили для основных компонентов макета, таких как хедер, футер, навигация и т.д.
-// pages/ — содержит стили, специфичные для отдельных страниц, если это необходимо.
-// themes/ — стили для разных тем.
-// utils/ — глобальные миксины, функции, вспомогательные селекторы и т.д.
-// vendors/ — стили, миксины и прочее от третьих сторон
-// main.scss — выходной файл, в котором объединяются все стили.
+// 7 directories and one main.scss file in the output:
+// base/ — includes global styles such as resets, typography, colors, etc.
+// components/ — contains individual components with separate .scss files for each.
+// layout/ — contains styles for major layout components like header, footer, navigation, etc.
+// pages/ — contains styles specific to individual pages if necessary.
+// themes/ — styles for different themes.
+// utils/ — global mixins, functions, helper selectors, etc.
+// vendors/ — styles, mixins, and other things from third parties
+// main.scss — the output file where all styles are combined.
 //
-// В каждом каталоге должен быть файл .scss, объединяющий все остальные файлы из этого каталога -
-// он может называться _module.scss или _glob.scss, например.
-// И на каждый из этих файлов должна быть ссылка в основном файле main.scss:
+// Each directory should have a .scss file that combines all other files in that directory -
+// it could be named _module.scss or _glob.scss, for example.
+// And each of these files should be linked in the main file main.scss:
 // main.scss
 // @import 'base/module';
 // @import 'components/module';

@@ -9,24 +9,22 @@
 
   <!-- Favicon -->
   <link type="image/x-icon" href="./images/favicon.png" rel="shortcut icon">
-  <link type="Image/x-icon" href="./images/favicon.png" rel="icon">
+  <link type="image/x-icon" href="./images/favicon.png" rel="icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap" rel="stylesheet">
 
-  <!-- Normalize -->
+  <!-- Normalize CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
     crossorigin="anonymous" />
 
-  <!-- Slider styles -->
+  <!-- Slider Styles -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
     integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,6 +32,7 @@
 </head>
 
 <body>
+  <!-- Include Partial Files -->
   <include src="./partials/header.html"></include>
   <include src="./partials/products.html"></include>
   <include src="./partials/about.html"></include>
@@ -44,52 +43,48 @@
   <include src="./partials/footer.html"></include>
   <include src="./partials/scroll-up.html"></include>
 
-  <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+  <!-- Main JavaScript File -->
   <script src="./index.js"></script>
 
-  <!-- Подключение jQuery -->
+  <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- Скрипт для секции Header "Моб.меню" -->
+  <!-- Header Section: Mobile Menu Script -->
   <script src="./js/menu.js"></script>
 
-  <!-- Скрипт для секции Header => Мобильное меню "Модалка" Buy_now -->
-    <script src="./js/modal-buy-now-mobile-menu.js"></script>
+  <!-- Header Section: Mobile Menu Modal Buy Now Script -->
+  <script src="./js/modal-buy-now-mobile-menu.js"></script>
 
-  <!-- Скрипт для секции Header "Модалка" Buy_now -->
+  <!-- Header Section: Buy Now Modal Script -->
   <script src="./js/modal-buy-now.js"></script>
-  
-  <!-- Скрипт для секции Contacts "Модалка" -->
+
+  <!-- Contacts Section: Modal Script -->
   <script src="./js/modal-contacts.js"></script>
 
-  <!-- Скрипт "Модальное окно" -->
-  <!-- <script src="./js/modal.js"></script> -->
-
-  <!-- Скрипт для секции Products -->
+  <!-- Products Section: Product Card Script -->
   <script src="./js/product-card.js"></script>
 
-  <!-- Скрипт "Модалка" для секции About -->
+  <!-- About Section: Modal Script -->
   <script src="./js/about.js"></script>
 
-  <!-- Скрипт плавного скролла к якорям для меню навигации Header -->
+  <!-- Smooth Scroll to Anchors in Header Navigation -->
   <script src="./js/scroll.js"></script>
 
-  <!-- Скрипт плавного скролла к якорям для Мобильного меню навигации Header -->
+  <!-- Smooth Scroll to Anchors in Mobile Menu Navigation -->
   <script src="./js/scroll-mobile.js"></script>
 
-  <!-- Скрипт для секции Customer Reviews "Slider script" -->
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <!-- Customer Reviews Section: Slider Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./js/slider.js"></script>
+
+  <!-- Generic Modal Script -->
   <script src="./js/modal.js"></script>
 
-  <!-- Скрипт Кнопка Скролла вверх -->
+  <!-- Scroll Up Button Script -->
   <script src="./js/scroll-up.js"></script>
 
 </body>

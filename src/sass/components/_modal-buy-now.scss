@@ -1,4 +1,4 @@
-/* Модальное окно для кнопки "Заказать услугу" */
+/* Modal window for the "Order Service" button */
 .modal-buy-now {
   position: absolute;
   top: 50%;
@@ -17,20 +17,22 @@
   background-color: #fff5f6;
   border-radius: 20px;
 }
-/* Кнопка Х закрытия модального окна */
+
+/* Close button for the modal window */
+
 .close-btn-buy-now {
   position: absolute;
   top: 8px;
   right: 8px;
   width: 30px;
   height: 30px;
-  /* круглая рамка вокруг Х */
+/* Close button for the modal window */
   // border: 1px solid var(--accent-color);
   border: none;
   border-radius: 50%;
   background-color: transparent;
   padding: 0;
-  /* центруем Х в круглой рамке */
+/* Center the 'X' in the round border */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,7 +43,7 @@
     fill: var(--btn-color__base-hover);
   }
 }
-/* Делаем плавный ховер при наведении на кнопку закрытия */
+  /* Smooth hover transition */
 .close-btn-buy-now-icon {
   fill: var(--btn-color__base);
   transition: fill var(--transition-timing) var(--transition-function);
